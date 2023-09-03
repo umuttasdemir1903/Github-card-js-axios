@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+
+:root {
+    --main-color: #0d1117;
+    --assistant-color: #161b22;
+    --input-font-color: #c2c3c5;
+    --border-color: #30363d;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #eee;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Albert Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: var(--main-color);
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px white;
+}
+
+.user-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 75%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px white;
+    background-color: var(--assistant-color);
+}
+
+.user-form input{
+    border: none;
+    font-family: inherit;
+    width: 100%;
+    padding: .8rem 1rem;
+    font-size: 16px;
+    border-radius: .5rem;
+    color: #fff;
+    border: 1px solid var(--border-color);
+    background-color: var(--main-color);
+}
+
+.user-form input:focus{
+    outline: none;
+}
+
+.user-form input::placeholder{
+    color: var(--input-font-color);
+}
+
+.user-form button{
+    position: absolute;
+    right: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    transition: .5s ease all;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    color: white;
+}
+
+.user-form button:hover{
+    color: var(--main-color);
+    background-color: var(--input-font-color);
+}
+
+#main{
+    width: 380px;
+    margin: 1rem ;
+}
+
+.card{
+    background-color: var(--assistant-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px white;
+    border: 3px solid var(--border-color);
+}
+
+.user-image{
+    width: 150px;
+    border-radius: 50%;
+    border: 8px solid var(--main-color);
+}
+
+.user-info{
+padding: 1rem;
+}
+
+.user-name{
+    line-height: 220%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-name h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: .4rem;
+    color: #eee;
+}
+
+.user-name small{
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.bio{
+    color: #eee;
+}
+
+ul{
+    padding: 1rem 0;
+display: flex;
+justify-content: space-evenly;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0.25rem ;
+    text-align: center;
+    column-gap: 20px;
+    border-radius: .4rem;
+    padding: .3rem;
+    background-color: #40454e;
+    color: #eee;
+}
+
+ul li i{
+    margin-right: 6px;
+
+}
+
+.repos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+}
+
+.repos a{
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 0.25rem 0.5rem;
+    margin: .25rem;
+    color: #eee;
+    border: 1px solid var(--border-color);
+}
+
+.repos i{
+    margin-right:.4rem ;
+    color: var(--input-font-color);
+}
